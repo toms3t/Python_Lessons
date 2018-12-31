@@ -65,12 +65,11 @@ def single_or_multithreaded(single=False):
     # print("--- %s seconds ---" % (seconds))
     print('\n')
 
-    os.chdir('/Users/tom/PycharmProjects/asyncio/xkcdmt')
-    file_count = os.popen('ls | wc -l').read().strip()
+    
+    file_count = os.popen('ls xkcdmt | wc -l').read().strip()
     print('{} comics were downloaded in {} seconds'.format(
         str(file_count), seconds)
     )
-    os.popen('rm *.*')
 
 
 if __name__ == '__main__':
