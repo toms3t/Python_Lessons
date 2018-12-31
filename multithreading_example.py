@@ -62,7 +62,6 @@ def single_or_multithreaded(single=False):
 
     print('Done.')
     seconds = time.time() - start_time
-    # print("--- %s seconds ---" % (seconds))
     print('\n')
 
     
